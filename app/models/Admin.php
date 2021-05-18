@@ -32,7 +32,7 @@ class Admin{
     }
 
 
-    ///// login user
+    ///// login user////////
     public function login($email, $password){
         $this->db->query("SELECT * FROM ". $this->admin_table ." WHERE email = :email");
         $this->db->bind(':email', $email);
@@ -50,12 +50,6 @@ class Admin{
         }else{
             return false;
         }
-       
-       
-
-       
-
-        
     }
 
     
